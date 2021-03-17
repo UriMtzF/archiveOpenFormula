@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="../imgs/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+	<title>Conversiones - OpenFormula</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="../../index.html">
+    	<img src="../imgs/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">  OpenFormula
+    </a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="../../index.html">Inicio</a>
+      </li>
+      <li class="nav-item">
+      	<a class="nav-link" href="https://huron1234289774521.wordpress.com/">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../paginas/acerca_de.html" tabindex="-1" aria-disabled="true">Acerca De</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Donaciones</a>
+      </li>
+    </ul>
+ 	 </div>
+	</nav>
+
+  <div class="alert alert-warning" role="alert">
+    <b>Nota: </b>Si las unidades a convertir se encuentran de derecha a izquierda, el factor se toma dividiendo
+  </div>
+    <div><center>
+      <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th colspan="5"><h1>Tabla de Conversiones</h1></th>
+          </tr>
+        </thead>
+        <thead class="thead-light">
+          <tr>
+            <th colspan="5"><h2>Unidad de Longitud</h2></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary">
+            <th scope="col" class="align-middle">Unidad <br></th>
+            <th scope="col" class="align-middle">Abreviacion</th>
+            <th scope="col" class="align-middle">Conversión a</th>
+            <th scope="col" class="align-middle">Abreviación</th>
+            <th scope="col" class="align-middle">Operación (multiplique por)</th>
+          </tr>
+          <tr>
+            <td>Pies</td>
+            <td>Ft</td>
+            <td>Metros</td>
+            <td>m</td>
+            <td>0.3048</td>
+          </tr>
+          <tr>
+            <td>Pies</td>
+            <td>Ft</td>
+            <td>Centímetros</td>
+            <td>cm</td>
+            <td>30.48</td>
+          </tr>
+          <tr>
+            <td>Pies</td>
+            <td>Ft</td>
+            <td>Milimetros</td>
+            <td>mm</td>
+            <td>304.8</td>
+          </tr>
+          <tr>
+            <td>Pies</td>
+            <td>Ft</td>
+            <td>Pulgadas</td>
+            <td>Pulg o inch</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Pulgadas</td>
+            <td>Pulg o inch</td>
+            <td>Metros</td>
+            <td>m</td>
+            <td>.0254</td>
+          </tr>
+          <tr>
+            <td>Pulgadas</td>
+            <td>Pulg o inch</td>
+            <td>Centímetros</td>
+            <td>cm</td>
+            <td>2.54</td>
+          </tr>
+          <tr>
+            <td>Pulgadas</td>
+            <td>Pulg o inch</td>
+            <td>Milímetros</td>
+            <td>mm</td>
+            <td>25.4</td>
+          </tr>
+          <tr>
+            <td>Pulgadas</td>
+            <td>Pulg o inch</td>
+            <td>Pies</td>
+            <td>Ft</td>
+            <td>.0833</td>
+          </tr>
+          <tr>
+            <td>Metros</td>
+            <td>m</td>
+            <td>Pies</td>
+            <td>Ft</td>
+            <td>3.28</td>
+          </tr>
+          <tr>
+            <td>Metros</td>
+            <td>m</td>
+            <td>Pulgadas</td>
+            <td>Pulg o inch</td>
+            <td>39.37</td>
+          </tr>
+          <tr>
+            <td>Centímetros</td>
+            <td>cm</td>
+            <td>Pies</td>
+            <td>Ft</td>
+            <td>.0328</td>
+          </tr>
+          <tr>
+            <td>Centímetros</td>
+            <td>cm</td>
+            <td>Pulgadas</td>
+            <td>Pulg o inch</td>
+            <td>.03937</td>
+          </tr>
+          <tr>
+            <td>Milla</td>
+            <td>Mi</td>
+            <td>Kilómetros</td>
+            <td>Km</td>
+            <td>1.609</td>
+          </tr>
+          <tr>
+            <td>Angstrom</td>
+            <td>A°</td>
+            <td>Centímetros</td>
+            <td>cm</td>
+            <td>.00000001</td>
+          </tr>
+          <tr>
+            <td>$\frac {1}{64}$ de Pulgada</td>
+            <td></td>
+            <td>Milímetros</td>
+            <td>mm</td>
+            <td>.4</td>
+          </tr>
+        </tbody>
+        <thead class="thead-light">
+          <tr>
+            <th colspan="5"><h2>Unidad de Peso o Fuerza</h2></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary">
+            <th scope="col" class="align-middle">Unidad</th>
+            <th scope="col" class="align-middle">Abreviacion</th>
+            <th scope="col" class="align-middle">Conversión a</th>
+            <th scope="col" class="align-middle">Abreviación</th>
+            <th scope="col" class="align-middle">Operación (multiplique por)</th>
+          </tr>
+          <tr>
+            <td>Libras</td>
+            <td>Lb</td>
+            <td>Gramos</td>
+            <td>g</td>
+            <td>453</td>
+          </tr>
+          <tr>
+            <td>Libras</td>
+            <td>Lb</td>
+            <td>Kilogramos</td>
+            <td>Kg</td>
+            <td>.453</td>
+          </tr>
+          <tr>
+            <td>Libras</td>
+            <td>Lb</td>
+            <td>Toneladas</td>
+            <td>Ton</td>
+            <td>.000453</td>
+          </tr>
+          <tr>
+            <td>Libras</td>
+            <td>Lb</td>
+            <td>Newtons</td>
+            <td>N o Nw</td>
+            <td>4.448</td>
+          </tr>
+          <tr>
+            <td>Kilogramos</td>
+            <td>Kg</td>
+            <td>Libras</td>
+            <td>Lb</td>
+            <td>2.205</td>
+          </tr>
+          <tr>
+            <td>$\frac {Libras}{Pies} $</td>
+            <td>$\frac {Lb}{Ft}$</td>
+            <td>$\frac {Kilogramos}{Metro}$</td>
+            <td>$\frac {Kg}{m}$</td>
+            <td>1.49</td>
+          </tr>
+          <tr>
+            <td>Kilogramos</td>
+            <td>Kg</td>
+            <td>Newtons</td>
+            <td>N o Nw</td>
+            <td>9.807</td>
+          </tr>
+          <tr>
+            <td>Gramos</td>
+            <td>g</td>
+            <td>Libras</td>
+            <td>Lb</td>
+            <td>.0022</td>
+          </tr>
+          <tr>
+            <td>Toneladas métricas</td>
+            <td></td>
+            <td>Libras</td>
+            <td>Lb</td>
+            <td>2205</td>
+          </tr>
+          <tr>
+            <td>Toneladas largas</td>
+            <td></td>
+            <td>Libras</td>
+            <td>Lb</td>
+            <td>2240</td>
+          </tr>
+          <tr>
+            <td>Toneladas cortas o netas</td>
+            <td></td>
+            <td>Libras</td>
+            <td>Lb</td>
+            <td>2000</td>
+          </tr>
+          <tr>
+            <td>Toneladas cortas o netas</td>
+            <td></td>
+            <td>Toneladas métricas</td>
+            <td></td>
+            <td>.907</td>
+          </tr>
+          <tr>
+            <td>Toneladas métricas</td>
+            <td></td>
+            <td>Kilogramos</td>
+            <td>Kg</td>
+            <td>1000</td>
+          </tr>
+        </tbody>
+        <thead class="thead-light">
+          <tr>
+            <th colspan="5"><h2>Unidad de Densidad</h2></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary">
+            <th scope="col" class="align-middle">Unidad</th>
+            <th scope="col" class="align-middle">Abreviacion</th>
+            <th scope="col" class="align-middle">Conversión a</th>
+            <th scope="col" class="align-middle">Abreviación</th>
+            <th scope="col" class="align-middle">Operación (multiplique por)</th>
+          </tr>
+          <tr>
+            <td>$\frac {Gramos}{Centímetros\thinspace cúbicos}$</td>
+            <td>$\frac {g}{cm^{3}}$</td>
+            <td>$\frac {Libras}{Pies\thinspace cúbicos}$</td>
+            <td>$\frac {Lb}{Ft^{3}}$</td>
+            <td>62.5</td>
+          </tr>
+          <tr>
+            <td>$\frac {Gramo}{Centímetros\thinspace cúbicos}$</td>
+            <td>$\frac {g}{cm^{3}}$</td>
+            <td>$\frac {Libras}{Galones}$</td>
+            <td>$\frac {Lib}{Gal}$</td>
+            <td>8.33</td>
+          </tr>
+          <tr>
+            <td>$\frac {Kilogramos}{Metros\thinspace cúbicos}$</td>
+            <td>$\frac {kg}{m^3}$</td>
+            <td>$\frac {Gramos}{Centímetro\thinspace cúbicos}$</td>
+            <td>$\frac {g}{cm^3}$</td>
+            <td>.001</td>
+          </tr>
+          <tr>
+            <td>$\frac {Libras}{Pies\thinspace cúbicos}$</td>
+            <td>$\frac {Lb}{Ft^3}$</td>
+            <td>$\frac {Gramos}{Centímetros\thinspace cúbicos}$</td>
+            <td>$\frac {g}{cm^3}$</td>
+            <td>.016</td>
+          </tr>
+          <tr>
+            <td>$\frac {Libras}{Galones}$</td>
+            <td>$\frac {Lb}{Gal}$</td>
+            <td>$\frac {Gramos}{Centímetros\thinspace cúbicos}$</td>
+            <td>$\frac {g}{cm^3}$</td>
+            <td>.12</td>
+          </tr>
+          <tr>
+            <td>$\frac {Libras}{Galones}$</td>
+            <td>$\frac {Lb}{Gal}$</td>
+            <td>$\frac {Libras}{Pies\thinspace cúbicos}$</td>
+            <td>$\frac {Lb}{Ft^3}$</td>
+            <td>7.51</td>
+          </tr>
+          <tr>
+            <td>$\frac {Libras}{Pies\thinspace cúbicos}$</td>
+            <td>$\frac {Lb}{Ft^3}$</td>
+            <td>$\frac {Libras}{Galones}$</td>
+            <td>$\frac {Lb}{Gal}$</td>
+            <td>.133</td>
+          </tr>
+          <tr>
+            <td>$\frac {Libras}{Pulgadas\thinspace cúbicas}$</td>
+            <td>$\frac {Lb}{Pulg^3}$ o $\frac {Lb}{inch^3}$</td>
+            <td>$\frac {Gramos}{Centímetros}$</td>
+            <td>$\frac {g}{cm}$</td>
+            <td>27.68</td>
+          </tr>
+          <tr>
+            <td>$\frac {Libras}{Pies\thinspace cúbicos}$</td>
+            <td>$\frac {Lb}{Ft^3}$</td>
+            <td>$\frac {Kilogramos}{Metros\thinspace cúbicos}$</td>
+            <td>$\frac {Kg}{m^3}$</td>
+            <td>16.02</td>
+          </tr>
+        </tbody>
+        <thead class="thead-light">
+          <tr>
+            <th colspan="5"><h2>Unidad de Presión</h2></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary">
+            <th scope="col" class="align-middle">Unidad</th>
+            <th scope="col" class="align-middle">Abreviacion</th>
+            <th scope="col" class="align-middle">Conversión a</th>
+            <th scope="col" class="align-middle">Abreviación</th>
+            <th scope="col" class="align-middle">Operación (multiplique por)</th>
+          </tr>
+          <tr>
+            <td>$\frac {Libras}{Pulgadas\thinspace Cuadradas}$</td>
+            <td>$\frac {Lb}{Pulg^2}$ o $\frac {Lb}{inch^2}$</td>
+            <td>$\frac {Kilogramos}{Centímetros\thinspace cuadrados}$</td>
+            <td>$\frac {Kg}{cm^2}$</td>
+            <td>.0703</td>
+          </tr>
+          <tr>
+            <td>$\frac {Kilogramos}{Centímetros\thinspace cuadrados}$</td>
+            <td>$\frac {Kg}{cm^2}$</td>
+            <td>$\frac {Libras}{Pulgadas\thinspace cuadradas}$</td>
+            <td>$\frac {Lb}{Pulg^2}$ o $\frac {Lb}{Inch^2}$</td>
+            <td>14.2</td>
+          </tr>
+          <tr>
+            <td>Atmósferas</td>
+            <td>Atm</td>
+            <td>$\frac {Libras}{Pulgadas\thinspace cuadradas}$</td>
+            <td>$\frac {Lb}{Pulg^2}$</td>
+            <td>14.7</td>
+          </tr>
+          <tr>
+            <td>Atmósferas</td>
+            <td>Atm</td>
+            <td>Milímetros de Mercurio</td>
+            <td>mmHg</td>
+            <td>760</td>
+          </tr>
+          <tr>
+            <td>Atmósferas</td>
+            <td>Atm</td>
+            <td>Pulgads de Mercurio</td>
+            <td>PulgHg</td>
+            <td>29.92</td>
+          </tr>
+          <tr>
+            <td>Atmósferas</td>
+            <td>Atm</td>
+            <td>Pie $H_{2}O$ o Ft $H_{2}O$</td>
+            <td></td>
+            <td>33.94</td>
+          </tr>
+          <tr>
+            <td>Atmósferas</td>
+            <td>Atm</td>
+            <td>$\frac {Kilogramos}{Centímetros\thinspace cuadrados}$</td>
+            <td>$\frac {Kg}{cm^2}$</td>
+            <td>1.034</td>
+          </tr>
+        </tbody>
+        <thead class="thead-light">
+          <tr>
+            <th colspan="5"><h2>Unidad de Potencia</h2></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary">
+            <th scope="col" class="align-middle">Unidad</th>
+            <th scope="col" class="align-middle">Abreviacion</th>
+            <th scope="col" class="align-middle">Conversión a</th>
+            <th scope="col" class="align-middle">Abreviación</th>
+            <th scope="col" class="align-middle">Operación (multiplique por)</th>
+          </tr>
+          <tr>
+            <td>Caballo de Fuerza</td>
+            <td>H.P.</td>
+            <td>Kilowats</td>
+            <td>Kw</td>
+            <td>.7457</td>
+          </tr>
+          <tr>
+            <td>Caballo de Vapor</td>
+            <td>C.V.</td>
+            <td>$\frac {Kilogramos}{Segundos}$</td>
+            <td>$\frac {Kg}{seg}$</td>
+            <td>75</td>
+          </tr>
+          <tr>
+            <td>Caballo de Fuerza</td>
+            <td>H.P.</td>
+            <td>$\frac {Kilogramos}{Segundos}$</td>
+            <td>$\frac {Kg}{seg}$</td>
+            <td>76</td>
+          </tr>
+          <tr>
+            <td>Caballo de Fuerza</td>
+            <td>H.P.</td>
+            <td>Caballo de Vapor</td>
+            <td>C.V.</td>
+            <td>1.0139</td>
+          </tr>
+          <tr>
+            <td>Caballo de Fuerza</td>
+            <td>H.P.</td>
+            <td>$\frac {Libras\thinspace Pies}{Segundos}$</td>
+            <td>$\frac {Lb\cdot Pies}{seg}$</td>
+            <td>550</td>
+          </tr>
+          <tr>
+            <td>Kilowatt</td>
+            <td>Kw</td>
+            <td>Watts</td>
+            <td>w</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td>$\frac {Libras\thinspace Pies}{Segundos}$</td>
+            <td>$\frac {Lb\cdot Pies}{seg}$</td>
+            <td>Watts</td>
+            <td>w</td>
+            <td>1.356</td>
+          </tr>
+        </tbody>
+        <thead class="thead-light">
+          <tr>
+            <th colspan="5"><h2>Unidad de Volumen</h2></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary">
+            <th scope="col" class="align-middle">Unidad</th>
+            <th scope="col" class="align-middle">Abreviacion</th>
+            <th scope="col" class="align-middle">Conversión a</th>
+            <th scope="col" class="align-middle">Abreviación</th>
+            <th scope="col" class="align-middle">Operación (multiplique por)</th>
+          </tr>
+          <tr>
+            <td>Litros</td>
+            <td>l</td>
+            <td>Pulgadas cúbicas</td>
+            <td>Pulg$^3$ o inch$^3$</td>
+            <td>61.02</td>
+          </tr>
+          <tr>
+            <td>Litros</td>
+            <td>l</td>
+            <td>Galones</td>
+            <td>Gal</td>
+            <td>0.2624</td>
+          </tr>
+          <tr>
+            <td>Litros</td>
+            <td>l</td>
+            <td>Pies cúbicos</td>
+            <td>FT$^3$</td>
+            <td>.03531</td>
+          </tr>
+          <tr>
+            <td>Litros</td>
+            <td>l</td>
+            <td>Galones</td>
+            <td>Gals</td>
+            <td>.2642</td>
+          </tr>
+          <tr>
+            <td>Pulgadas cúbicas</td>
+            <td>Pulg$^3$ o inch$^3$</td>
+            <td>Centímetros cúbicos</td>
+            <td>cm$^3$</td>
+            <td>16.39</td>
+          </tr>
+          <tr>
+            <td>Pulgadas cúbicas</td>
+            <td>Pulg$^3$ o inch$^3$</td>
+            <td>Metros cúbicos</td>
+            <td>m$^3$</td>
+            <td>.0000163</td>
+          </tr>
+          <tr>
+            <td>Barriles</td>
+            <td>Brl</td>
+            <td>Galones</td>
+            <td>Gal</td>
+            <td>42</td>
+          </tr>
+          <tr>
+            <td>Barriles</td>
+            <td>Brl</td>
+            <td>Litros</td>
+            <td>l</td>
+            <td>159</td>
+          </tr>
+          <tr>
+            <td>Barriles</td>
+            <td>Brl</td>
+            <td>Metros cúbicos</td>
+            <td>m$^3$</td>
+            <td>.159</td>
+          </tr>
+          <tr>
+            <td>Barriles</td>
+            <td>Brl</td>
+            <td>Pies cúbicos</td>
+            <td>ft$^3$</td>
+            <td>5.6</td>
+          </tr>
+          <tr>
+            <td>Galones</td>
+            <td>Gal</td>
+            <td>Litros</td>
+            <td>l</td>
+            <td>3.785</td>
+          </tr>
+          <tr>
+            <td>Galones</td>
+            <td>Gal</td>
+            <td>Metros cúbicos</td>
+            <td>m$^3$</td>
+            <td>.003785</td>
+          </tr>
+          <tr>
+            <td>Galones</td>
+            <td>Gal</td>
+            <td>Barriles</td>
+            <td>Brl</td>
+            <td>.0238</td>
+          </tr>
+          <tr>
+            <td>Galones</td>
+            <td>Gal</td>
+            <td>Centímetros cúbicos</td>
+            <td>cm$^3$</td>
+            <td>3785</td>
+          </tr>
+          <tr>
+            <td>Galones</td>
+            <td>Gal</td>
+            <td>Pies cúbicos</td>
+            <td>Ft$^3$</td>
+            <td>.133</td>
+          </tr>
+          <tr>
+            <td>Metros cúbicos</td>
+            <td>m$^3$</td>
+            <td>Litros</td>
+            <td>l</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td>Metros cúbicos</td>
+            <td>m$^3$</td>
+            <td>Centímetros cúbicos</td>
+            <td>cm$^3$</td>
+            <td>1 000 000</td>
+          </tr>
+          <tr>
+            <td>Metros cúbicos</td>
+            <td>m$^3$</td>
+            <td>Mililitros</td>
+            <td>ml</td>
+            <td>1 000 000</td>
+          </tr>
+          <tr>
+            <td>Metros cúbicos</td>
+            <td>m$^3$</td>
+            <td>Pies cúbicos</td>
+            <td>Ft$^3$</td>
+            <td>35.31</td>
+          </tr>
+          <tr>
+            <td>Metros cúbicos</td>
+            <td>m$^3$</td>
+            <td>Barriles</td>
+            <td>Brl</td>
+            <td>6.28</td>
+          </tr>
+          <tr>
+            <td>Metros cúbicos</td>
+            <td>m$^3$</td>
+            <td>Galones</td>
+            <td>Gal</td>
+            <td>264.2</td>
+          </tr>
+          <tr>
+            <td>Pies cúbicos</td>
+            <td>Ft$^3$</td>
+            <td>Metros cúbicos</td>
+            <td>m$^3$</td>
+            <td>.0283</td>
+          </tr>
+          <tr>
+            <td>Pies cúbicos</td>
+            <td>Ft$^3$</td>
+            <td>Litros</td>
+            <td>l</td>
+            <td>28.3</td>
+          </tr>
+          <tr>
+            <td>Pies cúbicos</td>
+            <td>Ft$^3$</td>
+            <td>Barriles</td>
+            <td>Brl</td>
+            <td>.178</td>
+          </tr>
+          <tr>
+            <td>Pies cúbicos</td>
+            <td>Ft$^3$</td>
+            <td>Centímetros cúbicos</td>
+            <td>cm$^3$</td>
+            <td>28 316.84</td>
+          </tr>
+          <tr>
+            <td>Pies cúbicos</td>
+            <td>Ft$^3$</td>
+            <td>Galones</td>
+            <td>Gal</td>
+            <td>7.51</td>
+          </tr>
+          <tr>
+            <td>Centímetros cúbicos</td>
+            <td>cm$^3$</td>
+            <td>Pies</td>
+            <td>Ft</td>
+            <td>.0000351</td>
+          </tr>
+          <tr>
+            <td>Centímetros cúbicos</td>
+            <td>cm$^3$</td>
+            <td>Galones</td>
+            <td>Gal</td>
+            <td>.0002642</td>
+          </tr>
+        </tbody>
+        <thead class="thead-light">
+          <tr>
+            <th colspan="5"><h2>Unidad de Superficie</h2></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary">
+            <th scope="col" class="align-middle">Unidad</th>
+            <th scope="col" class="align-middle">Abreviacion</th>
+            <th scope="col" class="align-middle">Conversión a</th>
+            <th scope="col" class="align-middle">Abreviación</th>
+            <th scope="col" class="align-middle">Operación (multiplique por)</th>
+          </tr>
+          <tr>
+            <td>Pies cuadrados</td>
+            <td>Ft$^2$</td>
+            <td>Pulgadas cuadradas</td>
+            <td>Pulg$^2$ o inch$^2$</td>
+            <td>144</td>
+          </tr>
+          <tr>
+            <td>Pies cuadrados</td>
+            <td>Ft$^2$</td>
+            <td>Centímetros cuadrados</td>
+            <td>cm$^2$</td>
+            <td>929.03</td>
+          </tr>
+          <tr>
+            <td>Pies cuadrados</td>
+            <td>Ft$^2$</td>
+            <td>Metros cuadrados</td>
+            <td>m$^2$</td>
+            <td>.0929</td>
+          </tr>
+          <tr>
+            <td>Pulgadas cuadradas</td>
+            <td>Pulg$^2$ o inch$^2$</td>
+            <td>Pies cuadrados</td>
+            <td>Ft$^2$</td>
+            <td>.0069</td>
+          </tr>
+          <tr>
+            <td>Pulgadas cuadradas</td>
+            <td>Pulg$^2$ o inch$^2$</td>
+            <td>Centímetros cuadrados</td>
+            <td>cm$^2$</td>
+            <td>6.4516</td>
+          </tr>
+          <tr>
+            <td>Pulgadas cuadradas</td>
+            <td>Pulg$^2$ o inch$^2$</td>
+            <td>Metros cuadrados</td>
+            <td>m$^2$</td>
+            <td>.000645</td>
+          </tr>
+          <tr>
+            <td>Centímetros cuadrados</td>
+            <td>cm$^2$</td>
+            <td>Pulgadas cuadradas</td>
+            <td>Pulg$^2$ o inch$^2$</td>
+            <td>.155</td>
+          </tr>
+          <tr>
+            <td>Centímetros cuadrados</td>
+            <td>cm$^2$</td>
+            <td>Pies cuadrados</td>
+            <td>Ft$^2$</td>
+            <td>.001076</td>
+          </tr>
+          <tr>
+            <td>Metros cuadrados</td>
+            <td>m$^2$</td>
+            <td>Pulgadas cuadradas</td>
+            <td>Pulg$^2$ o inch$^2$</td>
+            <td>1551.3</td>
+          </tr>
+          <tr>
+            <td>Metros cuadrados</td>
+            <td>m$^2$</td>
+            <td>Pies cuadrados</td>
+            <td>Ft$^2$</td>
+            <td>10.76</td>
+          </tr>
+          <tr>
+            <td>Metros cuadrados</td>
+            <td>m$^2$</td>
+            <td>Centímetros cuadrados</td>
+            <td>cm$^2$</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+        <thead class="thead-light">
+          <tr>
+            <th colspan="5"><h2>Unidad de Gasto</h2></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary">
+            <th scope="col" class="align-middle">Unidad</th>
+            <th scope="col" class="align-middle">Abreviacion</th>
+            <th scope="col" class="align-middle">Conversión a</th>
+            <th scope="col" class="align-middle">Abreviación</th>
+            <th scope="col" class="align-middle">Operación (multiplique por)</th>
+          </tr>
+          <tr>
+            <td>$\frac {Barril}{hora}$</td>
+            <td>$\frac {Brl}{h}$</td>
+            <td>$\frac {Pies\thinspace cúbicos}{minutos}$</td>
+            <td>$\frac {Ft^3}{min}$</td>
+            <td>.0936</td>
+          </tr>
+          <tr>
+            <td>$\frac {Barril}{hora}$</td>
+            <td>$\frac {Brl}{h}$</td>
+            <td>$\frac {Galones}{minuto}$</td>
+            <td>$\frac {Gal}{min}</td>
+            <td>.7</td>
+          </tr>
+          <tr>
+            <td>$\frac {Barril}{minuto}$</td>
+            <td>$\frac {Brl}{min}$</td>
+            <td>$\frac {Litros}{min}$</td>
+            <td>$\frac {l}{min}$</td>
+            <td>159</td>
+          </tr>
+          <tr>
+            <td>$\frac {Pies\thinspace cúbicos}{minuto}$</td>
+            <td>$\frac {Ft^3}{min}$</td>
+            <td>$\frac {Galones}{minuto}$</td>
+            <td>$\frac {Gal}{min}$</td>
+            <td>7.481</td>
+          </tr>
+          <tr>
+            <td>$\frac {Galones}{minuto}$</td>
+            <td>$\frac {Gal}{min}$</td>
+            <td>$\frac {Litros}{minuto}$</td>
+            <td>$\frac {l}{min}$</td>
+            <td>3.7854</td>
+          </tr>
+        </tbody>
+        <thead class="thead-light">
+          <tr>
+            <th colspan="5"><h2>Unidad de Torsión</h2></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary">
+            <th scope="col" class="align-middle">Unidad</th>
+            <th scope="col" class="align-middle">Abreviacion</th>
+            <th scope="col" class="align-middle">Conversión a</th>
+            <th scope="col" class="align-middle">Abreviación</th>
+            <th scope="col" class="align-middle">Operación (multiplique por)</th>
+          </tr>
+          <tr>
+            <td>Libras-Pies</td>
+            <td>Lb-Ft</td>
+            <td>Kilogramos-Metros</td>
+            <td>Kg-m</td>
+            <td>.1382</td>
+          </tr>
+          <tr>
+            <td>Kilogramos-Metros</td>
+            <td>Kg-m</td>
+            <td>Libras-Pies</td>
+            <td>Lb-Ft</td>
+            <td>7.233</td>
+          </tr>
+          <tr>
+            <td>Libras-Pies</td>
+            <td>Lb-Ft</td>
+            <td>Newtons-Metros</td>
+            <td>Nw-m o N-m</td>
+            <td>1.356</td>
+          </tr>
+        </tbody>
+        <thead class="thead-light">
+          <tr>
+            <th colspan="5"><h2>Unidad de Temperatura</h2></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary">
+            <th scope="col" class="align-middle">Unidad</th>
+            <th scope="col" class="align-middle">Abreviacion</th>
+            <th scope="col" class="align-middle">Conversión a</th>
+            <th scope="col" class="align-middle">Abreviación</th>
+            <th scope="col" class="align-middle">Fórmula de convsersión</th>
+          </tr>
+          <tr>
+            <td>Fahrenheit</td>
+            <td>F</td>
+            <td>Celsius</td>
+            <td>C</td>
+            <td>C=</td>
+          </tr>
+          <tr>
+            <td>Celsius</td>
+            <td>C</td>
+            <td>Fahrenheit</td>
+            <td>F</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Kelvin</td>
+            <td>K</td>
+            <td>Celsius</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Celsius</td>
+            <td>C</td>
+            <td>Kelvin</td>
+            <td>K</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Kelvin</td>
+            <td>K</td>
+            <td>Fahrenheit</td>
+            <td>F</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Fahrenheit</td>
+            <td>F</td>
+            <td>Kelvin</td>
+            <td>K</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rankine</td>
+            <td>R</td>
+            <td>Fahrenheit</td>
+            <td>F</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Fahrenheit</td>
+            <td>F</td>
+            <td>Rankin</td>
+            <td>R</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Réamur</td>
+            <td></td>
+            <td>Celsius</td>
+            <td>C</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rankine</td>
+            <td>R</td>
+            <td>Kelvin</td>
+            <td>K</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rankine</td>
+            <td>R</td>
+            <td>celsius</td>
+            <td>C</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Celsius</td>
+            <td>C</td>
+            <td>Rankine</td>
+            <td>R</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Celsius</td>
+            <td>C</td>
+            <td>Réamur</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Kelvin</td>
+            <td>K</td>
+            <td>Rankine</td>
+            <td>R</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Fahrenheit</td>
+            <td>F</td>
+            <td>Reamur</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Reamur</td>
+            <td></td>
+            <td>Fahrenheit</td>
+            <td>F</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Kelvin</td>
+            <td>K</td>
+            <td>Reamur</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Reamur</td>
+            <td></td>
+            <td>Kelvin</td>
+            <td>K</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rankine</td>
+            <td>R</td>
+            <td>Réamur</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Réamur</td>
+            <td></td>
+            <td>Rankine</td>
+            <td>R</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+  </div>
+
+</body>
+</html>
