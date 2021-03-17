@@ -1,2 +1,2 @@
 # archiveOpenFormula
-Archive for old versions of OpenFormula
+Archivo de versiones viejas de OpenFormula
